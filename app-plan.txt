@@ -1,0 +1,17 @@
+ Features
+    Shopping List
+    Recipe Book
+
+Components
+    Root
+    Header (Navbar?)
+        Shopping List (Feature) 
+            Shopping List
+            Shopping List Edit
+            Ingredient (Model)
+
+        Recipe Book (Feature)
+            Recipe List
+            Recipe Item
+            Recipe Detail
+            Recipe (Model)
