@@ -2,6 +2,7 @@ import { Recipe } from "./recipe.model";
 import { EventEmitter, Injectable } from "@angular/core";
 import { Ingredient } from "../shared/ingredient.model";
 import { ShoppingListService } from "../shopping-list/shopping-list.service";
+import { ThrowStmt } from "@angular/compiler";
 
 @Injectable()
 export class RecipeService{
@@ -29,6 +30,10 @@ export class RecipeService{
 
     getRecipes(){
         return this.recipes.slice();
+    }
+
+    getRecipe(id: number){
+        return this.recipes[id];
     }
 
     addIngredientsToShoppingList(ingredients: Ingredient[]){
